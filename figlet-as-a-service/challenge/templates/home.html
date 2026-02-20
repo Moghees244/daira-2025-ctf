@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decorator</title>
+    <link rel="stylesheet" href="public/css/home.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>TEXT DECORATOR</h1>
+    <form action="{{ url_for('home.process_data') }}" method="post">
+        <input type="text" id="dataInput" name="message" required>
+        <button type="submit">Submit</button>
+    </form>
+    <pre>{{ message }}</pre>
+</div>
+
+<!-- Footer -->
+<div style="text-align: center;">
+    <h3>Created By Moghees Ahmad</h3>
+    <a href="https://www.linkedin.com/in/moghees-ahmad-064a94188" target="_blank"><b>LinkedIn</b></a>
+    <a href="https://github.com/Moghees244" target="_blank"><b>Github</b></a>
+</div>
+<!-- Footer -->
+
+</body>
+</html>
